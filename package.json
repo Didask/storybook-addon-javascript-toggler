@@ -1,0 +1,25 @@
+{
+  "name": "@didask/storybook__addon-javascript-disabler",
+  "version": "0.1.0",
+  "description": "Storybook addon to disable javascript in the preview area",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Didask/storybook__addon-javascript-disabler.git",
+  "author": "Didask ODC Devs (https://github.com/orgs/Didask/teams/odc-devs)",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addons": "^5.1.3",
+    "@storybook/components": "^5.1.3",
+    "@storybook/core-events": "^5.1.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
