@@ -1,1 +1,1 @@
-# storybook-javascript-disabler
+# storybook-addon-javascript-toggler

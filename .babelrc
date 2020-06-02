@@ -1,7 +1,19 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-typescript"
+  ],
   "plugins": [
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-export-default-from",
+    ["@babel/plugin-proposal-decorators", {
+      "legacy": true
+    }],
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-transform-react-display-name",
+    "@babel/plugin-transform-arrow-functions",
+    "@babel/plugin-transform-template-literals",
+    "@babel/plugin-transform-classes"
   ]
-
 }
