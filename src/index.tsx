@@ -2,7 +2,7 @@ import * as React from 'react'
 import addons, { makeDecorator } from '@storybook/addons'
 // import { STORY_RENDERED } from '@storybook/core-events';
 
-import { PARAM_KEY, ADDON_ID } from './constants'
+import { PARAM_KEY, ADDON_ID, JS_START_ENABLED } from './constants'
 import { useState } from 'react'
 import { SandBoxedIFrame } from './components/SandBoxedIFrame'
 
@@ -11,7 +11,7 @@ export const withJSToggler = makeDecorator({
   parameterName: PARAM_KEY,
   skipIfNoParametersOrOptions: false,
   wrapper: function JSToggler_StoryWrapper(getStory, context) {
-    const [hasJS, setJSEnability] = useState(true)
+    const [hasJS, setJSEnability] = useState(JS_START_ENABLED)
 
     const channel = addons.getChannel()
     // TODO: get back to activated whenever the story change. Or at least, rerender.
