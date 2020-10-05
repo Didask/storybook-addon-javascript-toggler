@@ -19,7 +19,7 @@ export const SandBoxedIFrame: React.FC<{
       <meta charset="utf-8">
       <script>window.onmessage = function(e){document.body.innerHTML = e.data}</script>
     </head>
-    <body>
+    <body style="overflow: auto;">
       <center><h4>Wait until I generated the static preview.</center></h4>
     </body>
   </html>`)

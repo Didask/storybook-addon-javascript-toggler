@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-javascript-toggler",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Storybook addon to toggle javascript in the preview area",
   "main": "dist/index.js",
   "repository": "https://github.com/Didask/storybook-addon-javascript-toggler.git",
